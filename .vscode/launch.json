@@ -1,0 +1,97 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ServerManager",
+            "request": "launch",
+            "mainClass": "com.louisnguyen.server.ServerManager",
+            "projectName": "NgocRongXuanHa_5ec1c5b6"
+        },
+        {
+            "name": "Java",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ]
+        },
+        {
+            "name": "Java Console App",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ],
+            "externalConsole": true
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "ConstTask",
+            "request": "launch",
+            "mainClass": "com.louisnguyen.consts.ConstTask",
+            "projectName": "SourceBlue_6f8f9d6"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "com.louisnguyen.consts.Test",
+            "projectName": "SourceBlue_6f8f9d6"
+        },
+        {
+            "type": "java",
+            "name": "ServerManager",
+            "request": "launch",
+            "mainClass": "com.louisnguyen.server.ServerManager",
+            "projectName": "SourceBlue_6f8f9d6"
+        },
+        {
+            "type": "java",
+            "name": "TaskService",
+            "request": "launch",
+            "mainClass": "com.louisnguyen.services.TaskService",
+            "projectName": "SourceBlue_6f8f9d6"
+        },
+        {
+            "type": "java",
+            "name": "GifSequenceWriter",
+            "request": "launch",
+            "mainClass": "com.louisnguyen.utils.GifSequenceWriter",
+            "projectName": "SourceBlue_6f8f9d6"
+        },
+        {
+            "type": "java",
+            "name": "ImageUtil",
+            "request": "launch",
+            "mainClass": "com.louisnguyen.utils.ImageUtil",
+            "projectName": "SourceBlue_6f8f9d6"
+        },
+        {
+            "type": "java",
+            "name": "ImageUtil2",
+            "request": "launch",
+            "mainClass": "com.louisnguyen.utils.ImageUtil2",
+            "projectName": "SourceBlue_6f8f9d6"
+        }
+    ]
+}
