@@ -320,6 +320,8 @@ public class InventoryServiceNew {
             case 3: // giầy
             case 4: // rada
             case 5: // Cải trang
+            case 23: //ván bay
+            case 24: //ván bay vip  
             case 32: //giap luyen tap
             case 11: // vật phẩm đeo lưng
             case 72: // Pet
@@ -371,6 +373,10 @@ public class InventoryServiceNew {
             case 4:
             case 5:
                 index = item.template.type;
+                break;
+            case 23:
+            case 24:
+                index = 10;
                 break;
             case 32:
                 index = 6;

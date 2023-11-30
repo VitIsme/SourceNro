@@ -123,7 +123,6 @@ public class Boss extends Player implements IBossNew, IBossOutfit {
             this.lastTimeGK = System.currentTimeMillis();
         }
     }
-
     protected void resetBase() {
         this.lastTimeChatS = 0;
         this.lastTimeChatE = 0;

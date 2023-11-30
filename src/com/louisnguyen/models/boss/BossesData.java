@@ -74,7 +74,7 @@ public class BossesData {
                 "|-1|Tao đã có lệnh từ đại ca Fide rồi"
             }, //text chat 2
             new String[]{"|-2|Đẹp trai nó phải thế"}, //text chat 3
-            REST_15_M //second rest
+            REST_10_M //second rest
     );
 
     public static final BossData SUPER_BROLY = new BossData(
@@ -99,7 +99,7 @@ public class BossesData {
                 "|-2|Không ngờ..Hắn mạnh cỡ này sao..!!"
             }, //text chat 2
             new String[]{"|-1|Gaaaaaaaa!!!"}, //text chat 3
-            REST_15_M //second rest
+            REST_10_M //second rest
     );
 
     public static final BossData MAP_DAU_DINH = new BossData(
@@ -125,7 +125,7 @@ public class BossesData {
                 "|-2|Thằng này,tao nhịn mày lâu lắm rồi ấy nhá",
                 "|-2|Coi thường nhau quá đấy",}, //text chat 2
             new String[]{"|-1|Ôi bạn ơi ....ơi!!!"}, //text chat 3
-            REST_15_M //second rest
+            REST_5_M //second rest
     );
 
     public static final BossData RAMBO = new BossData(
@@ -151,7 +151,7 @@ public class BossesData {
                 "|-2|Oái..!",
                 "|-2|Đừng tưởng thế này là xong..! Tao sẽ còn mạnh hơn nữa!",}, //text chat 2
             new String[]{"|-1|Ôi bạn ơi..."}, //text chat 3
-            REST_15_M //second rest
+            REST_5_M //second rest
     );
 
     //************************************************************************** Boss tiểu đội sát thủ
@@ -175,7 +175,7 @@ public class BossesData {
                 "|-1|Ta mà lại thua được sao?",
                 "|-1|Hãy trả thù cho ta!"
             }, //text chat 3
-            REST_30_M
+            REST_10_M
     );
 
     public static final BossData SO_3 = new BossData(

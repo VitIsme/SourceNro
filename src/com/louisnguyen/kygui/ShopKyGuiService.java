@@ -39,8 +39,7 @@ public class ShopKyGuiService {
                 .forEachOrdered((it) -> {
                     its.add(it);
                 });
-        its.stream().filter(i -> i != null).sorted(Comparator.comparing(i -> i.isUpTop, Comparator.reverseOrder()))
-                .forEach(i -> listSort.add(i));
+        its.stream().filter(i -> i != null).sorted(Comparator.comparing(i -> i.isUpTop, Comparator.reverseOrder())).forEach(i -> listSort.add(i));
         for (int i = to; i <= max && i < listSort.size(); i++) {
             listSort2.add(listSort.get(i));
         }
@@ -130,8 +129,8 @@ public class ShopKyGuiService {
     }
 
     public void buyItem(Player pl, int id) {
-        if (pl.nPoint.power < 17000000000L) {
-            Service.gI().sendThongBao(pl, "Yêu cầu sức mạnh lớn hơn 17 tỷ");
+        if (pl.nPoint.power < 20000000000L) {
+            Service.gI().sendThongBao(pl, "Yêu cầu sức mạnh lớn hơn 20 tỷ");
             openShopKyGui(pl);
             return;
         }
@@ -236,7 +235,7 @@ public class ShopKyGuiService {
                     msg.writer().writeShort(it.itemOptions.get(a).param);
                 }
                 msg.writer().writeByte(0);
-                // msg.writer().writeByte(0);
+                msg.writer().writeByte(0);
             }
             pl.sendMessage(msg);
         } catch (Exception e) {

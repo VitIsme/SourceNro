@@ -19,6 +19,8 @@ import com.louisnguyen.models.item.Item;
 import com.louisnguyen.models.map.ItemMap;
 import com.louisnguyen.models.mob.Mob;
 import com.louisnguyen.models.npc.specialnpc.MabuEgg;
+import com.louisnguyen.models.npc.Npc;
+import com.louisnguyen.models.npc.NpcFactory;
 import com.louisnguyen.models.npc.specialnpc.BillEgg;
 import com.louisnguyen.models.player.Pet;
 import com.louisnguyen.models.item.Item.ItemOption;
@@ -606,36 +608,36 @@ public class Service {
                 return;
             } else if (text.startsWith("danhhieu1")) {
                 if (player.lastTimeTitle3 == 0) {
-                    player.lastTimeTitle3 += System.currentTimeMillis() + (1000 * 60 * 60 * 24 * 100000);
+                    player.lastTimeTitle3 += System.currentTimeMillis() + (1000 * 60 * 60 * 24 * 3);
                 } else {
-                    player.lastTimeTitle3 += (1000 * 60 * 60 * 24 * 100000);
+                    player.lastTimeTitle3 += (1000 * 60 * 60 * 24 * 3);
                 }
                 player.isTitleUse3 = true;
                 Service.gI().point(player);
                 Service.gI().sendTitle(player, 890);
-                Service.gI().sendThongBao(player, "Bạn nhận được 10000 ngày danh hiệu !");
+                Service.gI().sendThongBao(player, "Bạn nhận được 3 ngày danh hiệu !");
                 return;
             } else if (text.startsWith("danhhieu2")) {
                 if (player.lastTimeTitle2 == 0) {
-                    player.lastTimeTitle2 += System.currentTimeMillis() + (1000 * 60 * 60 * 24 * 100000);
+                    player.lastTimeTitle2 += System.currentTimeMillis() + (1000 * 60 * 60 * 24 * 3);
                 } else {
-                    player.lastTimeTitle2 += (1000 * 60 * 60 * 24 * 100000);
+                    player.lastTimeTitle2 += (1000 * 60 * 60 * 24 * 3);
                 }
                 player.isTitleUse2 = true;
                 Service.gI().point(player);
                 Service.gI().sendTitle(player, 889);
-                Service.gI().sendThongBao(player, "Bạn nhận được 10000 ngày danh hiệu !");
+                Service.gI().sendThongBao(player, "Bạn nhận được 3 ngày danh hiệu !");
                 return;
             } else if (text.startsWith("danhhieu3")) {
                 if (player.lastTimeTitle1 == 0) {
-                    player.lastTimeTitle1 += System.currentTimeMillis() + (1000 * 60 * 60 * 24 * 100000);
+                    player.lastTimeTitle1 += System.currentTimeMillis() + (1000 * 60 * 60 * 24 * 3);
                 } else {
-                    player.lastTimeTitle1 += (1000 * 60 * 60 * 24 * 100000);
+                    player.lastTimeTitle1 += (1000 * 60 * 60 * 24 * 3);
                 }
                 player.isTitleUse = true;
                 Service.gI().point(player);
                 Service.gI().sendTitle(player, 888);
-                Service.gI().sendThongBao(player, "Bạn nhận được 10000 ngày danh hiệu !");
+                Service.gI().sendThongBao(player, "Bạn nhận được 3 ngày danh hiệu !");
                 return;
             } else if (text.startsWith("get ")) {
                 int itemId = Integer.parseInt(text.replace("get ", ""));

@@ -40,7 +40,7 @@ public class Maintenance extends Thread {
                     + " giây nữa, vui lòng thoát game để tránh mất vật phẩm");
             }else{
                 Service.gI().sendThongBaoAllPlayer("Hệ thống sẽ bảo trì sau " + min/60
-                    + " phút nữa, vui lòng thoát game để tránh mất vật phẩm");
+                    + " phút nữa, vui lòng thoát game để tránh mất vật phẩm");          
             }
             try {
                 Thread.sleep(1000);

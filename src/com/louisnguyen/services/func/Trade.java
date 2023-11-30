@@ -183,7 +183,7 @@ public class Trade {
             case 6: //đậu thần
             case 7: //sách skill
             case 8: //vật phẩm nhiệm vụ
-            case 11: //flag bag
+           case 11: //flag bag
             case 13: //bùa
             case 22: //vệ tinh
             case 23: //ván bay

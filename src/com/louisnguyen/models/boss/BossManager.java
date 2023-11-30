@@ -289,10 +289,10 @@ public class BossManager implements Runnable {
                 msg.writer().writeShort(boss.data[0].getOutfit()[2]);
                 msg.writer().writeUTF(boss.data[0].getName());
                 if (boss.zone != null) {
-                    msg.writer().writeUTF("On");
+                    msg.writer().writeUTF("Xuất hiện");
                     msg.writer().writeUTF(boss.zone.map.mapName + "(" + boss.zone.map.mapId + ") khu " + boss.zone.zoneId + "");
                 } else {
-                    msg.writer().writeUTF("Off");
+                    msg.writer().writeUTF("Chưa xuất hiện");
                     msg.writer().writeUTF("Chưa có thông tin !");
                 }
             }

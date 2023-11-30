@@ -87,7 +87,7 @@ public class GodGK {
                 long lastTimeLogout = rs.getTimestamp("last_time_logout").getTime();
                 int secondsPass = (int) ((System.currentTimeMillis() - lastTimeLogout) / 1000);
                 if (rs.getBoolean("ban")) {
-                    Service.getInstance().sendThongBaoOK(session, "Tài khoản đã bị khóa vì dựa vào lỗi admin chuộc lợi!");
+                    Service.getInstance().sendThongBaoOK(session, "Tài khoản đã bị khóa vì vi phạm quy tắc!");
                 } else if (baotri && session.isAdmin) {
                     Service.getInstance().sendThongBaoOK(session, "Máy chủ đang bảo trì, vui lòng quay lại sau!");
                 } else if (secondsPass1 < Manager.SECOND_WAIT_LOGIN) {

@@ -1374,7 +1374,7 @@ public class NpcFactory {
                             "Cửa hàng ta có bán các vật phẩm, cải trang đặc biệt cũng như có hỗ trợ\n"
                                     + "mua nhanh vật phẩm bằng Thỏi vàng\n"
                                     + "Ngươi muốn ta giúp gì?",
-                            "Cửa hàng\nSanta", "Mua bằng\nThỏi vàng");
+                            "Cửa hàng\nSanta");
                 }
             }
 
@@ -1398,12 +1398,12 @@ public class NpcFactory {
                                 // this.npcChat(player, "Ôi tôi xin lỗi, cửa hàng của tôi chưa kịp bày bán sản
                                 // phẩm.");
                                 // break;
-                                case 1:
-                                    createOtherMenu(player, ConstNpc.MENU_MUA_CAPSULE,
-                                            "Hiện tại ta có hỗ trợ mua vật phẩm trong cửa hàng Santa bằng Thỏi vàng nhanh.\n"
-                                                    + "Ngươi muốn mua vật phẩm nào?",
-                                            "Capsule\nhồng ngọc");
-                                    break;
+                    //         case 1:
+                    //                createOtherMenu(player, ConstNpc.MENU_MUA_CAPSULE,
+                   //                         "Hiện tại ta có hỗ trợ mua vật phẩm trong cửa hàng Santa bằng Thỏi vàng nhanh.\n"
+                    //                                + "Ngươi muốn mua vật phẩm nào?",
+                    //                        "Capsule\nhồng ngọc");
+                   //                 break;
                             }
                             return;
                         }
@@ -1692,7 +1692,8 @@ public class NpcFactory {
                                     ShopServiceNew.gI().opendShop(player, "BUA_1M", true);
                                     break;
                                 case 1:
-                                    Service.gI().sendThongBaoOK(player, "Đang bảo trì");
+                                 //   Service.gI().sendThongBaoOK(player, "Đang bảo trì");
+                                    ShopServiceNew.gI().opendShop(player, "BUA_MABU", true);
                                     break;
                             }
                         } else if (player.iDMark.getIndexMenu() == ConstNpc.MENU_START_COMBINE) {
@@ -2555,7 +2556,7 @@ public class NpcFactory {
             // + "chiến binh đệ tử Ma Bư với giá 66 thỏi vàng", "Đổi\nđệ Mabư", "Từ chối");
             // }
             // createOtherMenu(player, ConstNpc.BASE_MENU,
-            // "Ta được admin Ngọc Rồng Sky đến đây để hỗ trợ các "
+            // "Ta được admin Ngọc Rồng đến đây để hỗ trợ các "
             // + "chiến binh đệ tử Ma Bư với giá 66 thỏi vàng\nHiện chiến binh đang có 1 quả
             // trứng tại nhà!! Cân nhắc trước khi đổi", "Đổi\nđệ Mabư", "Từ chối");
             // }
